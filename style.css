@@ -1,0 +1,12 @@
+.submit-aria{
+    box-shadow: 5px 5px 10px lightgray;
+    padding: 40px;
+    border-radius: 10px;
+}
+#transaction{
+    display: none;
+}
+.ststus{
+    padding: 20px 0px;
+    border-radius: 10px;
+}
