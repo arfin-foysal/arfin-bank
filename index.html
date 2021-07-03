@@ -25,19 +25,19 @@
            <div class="col-4"> 
                <div class="ststus bg-success">
                 <h4>Deposite</h4>
-                <h2>$00</h2>
+                <h2>$<span id="correntValue">00</span></h2>
                </div> 
         </div>
         <div class="col-4"> 
                <div class="ststus bg-danger">
                 <h4>Withdraw</h4>
-                <h2>$00</h2>
+                <h2>$<span id="correntWithdraw">00</span></h2>
                </div> 
           </div>
            <div class="col-4"> 
                <div class="ststus bg-primary">
                 <h4>Balance</h4>
-                <h2>$1200</h2>
+                <h2>$<span id="courrentBalance">1200</span></h2>
                </div> 
         </div>
         </div> 
@@ -46,28 +46,22 @@
            <div class="col-6">
                <div class="submit-aria">
                    <h4>Deposite</h4>
-                   <input type="text" class="form-control" name="" placeholder="$ amount you want to deposite" id="">
-                   <button class="btn btn-success mt-3">Deposite</button>
+                   <input type="text" id="depositeAmmount"  class="form-control" name="" placeholder="$ amount you want to deposite" id="">
+                   <button id="depositeBtn" class="btn btn-success mt-3">Deposite</button>
                </div>
            </div>
            <div class="col-6">
             <div class="submit-aria">
                 <h4>Withdraw</h4>
-                <input type="text" class="form-control" name="" placeholder="$ amount you want to Withdraw" id="">
-                <button class="btn btn-success mt-3">Withdraw</button>
+                <input type="text" id="withdrowAmount" class="form-control" name="" placeholder="$ amount you want to Withdraw" id="">
+                <button id="withdrowBtn" class="btn btn-success mt-3">Withdraw</button>
             </div>
            </div>
         </div>
 
     </div>
 
-      <script>
-          const loginBtn=document.getElementById("login")
-          loginBtn.addEventListener("click",function () {
-              document.getElementById("login-aria").style.display="none";
-              document.getElementById("transaction").style.display="block";
-          })
-      </script>
+      <script src="app.js"></script>
 
 </body>
 </html>
